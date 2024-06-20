@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+.main {
+  font-family: fantasy;
+  font-size: 2.2rem;
+  text-align: center;
+  .war-field {
+    display: flex;
+    justify-content: center;
+    table {
+      transform: translateX(-25px);
+    }
+  }
+  h1 {
+    margin: 15px auto 30px;
+    padding: 0;
+  }
+  td {
+    width: 40px;
+    height: 50px;
+    border: 1px solid black;
+  }
+  .numbers-row {
+      border: none;
+      width: 50px;
+  }
+  .miss {
+    background: url("../img/miss.png") center no-repeat;
+    background-size: 75% 75%;
+  }
+  .hit {
+    background: url("../img/ship-2.png") no-repeat center;
+    background-size: 75% 75%;
+  }
+  #bottom-label {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-family: serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #DBDBDB;
+    opacity: 0.5;
+  }
+  #form {
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    display: inline-block;
+  }
+  #form-input {
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+    width: 75px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  #form-button {
+    font-size: 2rem;
+    width: 150px;
+    height: 50px;
+    background-color: #B60000;
+    border-radius: 10px;
+  }
+  #form-button:hover {
+    transition: 0.2s;
+    background-color: #FF8181;
+  }
+}
